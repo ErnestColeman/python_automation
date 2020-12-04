@@ -32,6 +32,7 @@ def merge_csv():
 def data_change():
     """
     Function to change letter grade ['A', 'B', 'C', 'D', 'F'] to numbers ['100', '85', '75', '65', '0']
+    Copies the data of 'UserLoginName' to 'StudentName' column and then splits the string at the '@' sign.
     """
     r = pd.read_csv (askopenfilename())
 
